@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:responsive_dash_board/theory_to_practice/views/widgets/tablet_layout.dart';
 
-import 'custom_list.dart';
-import 'custom_sliver_grid.dart';
-import 'custom_sliver_list_view.dart';
+import 'mobil_layout.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -13,27 +12,13 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
-      child: CustomScrollView(
-        slivers: [
-          // sizeBox
-          const SliverToBoxAdapter(
-            child: SizedBox(height: 16.0),
-          ),
-          // custom_sliver_grid
-          SliverToBoxAdapter(
-            child: LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth > 600) {
-                // todo add tablet layout
-                return const CustomList();
-              } else {
-                return const CustomSliverGrid();
-              }
-            }),
-          ),
-          // CustomListView
-          const CustomSliverListView(),
-        ],
-      ),
+      child: LayoutBuilder(builder: (context, constraints) {
+        if (constraints.maxWidth > 600) {
+          return const TabletLayout();
+        } else {
+          return const MobilLayout();
+        }
+      }),
     );
   }
 }
