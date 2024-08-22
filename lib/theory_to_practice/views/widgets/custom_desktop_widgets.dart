@@ -12,6 +12,7 @@ class CustomDesktopWidgets extends StatelessWidget {
     return const Column(
       children: [
         Expanded(flex: 2, child: CustomItem1()),
+        SizedBox(height: 16.0),
         Expanded(flex: 1, child: CustomItem2()),
       ],
     );

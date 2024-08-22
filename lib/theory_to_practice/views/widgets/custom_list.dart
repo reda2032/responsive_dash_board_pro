@@ -11,7 +11,7 @@ class CustomList extends StatelessWidget {
       child: SizedBox(
         height: 100,
         child: ListView.builder(
-            itemCount: 15,
+            itemCount: 25,
             scrollDirection: Axis.horizontal,
             itemBuilder: (context, index) {
               return const Padding(

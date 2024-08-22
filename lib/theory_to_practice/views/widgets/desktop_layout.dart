@@ -13,7 +13,12 @@ class DesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(child: CustomDrawer()),
-        Expanded(flex: 3, child: TabletLayout()),
+        Expanded(
+            flex: 3,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
+              child: TabletLayout(),
+            )),
         Expanded(child: CustomDesktopWidgets()),
       ],
     );
