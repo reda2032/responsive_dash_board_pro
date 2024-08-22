@@ -19,7 +19,7 @@ class _HomeViewState extends State<HomeView> {
       key: scaffoldKey,
       drawer: const CustomDrawer(),
       backgroundColor: const Color(0xffDBDBDB),
-      appBar: MediaQuery.sizeOf(context).width < 900
+      appBar: MediaQuery.sizeOf(context).width - 32.0 < 900
           ? AppBar(
               backgroundColor: Colors.black,
               leading: GestureDetector(
@@ -66,7 +66,7 @@ class CustomAdaptiveAppBar extends StatelessWidget
   }
 
   @override
-  // TODO: implement preferredSize
+
   Size get preferredSize => const Size.fromHeight(65.0);
 }
 */
