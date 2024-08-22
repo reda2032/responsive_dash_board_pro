@@ -16,9 +16,10 @@ class CustomDrawer extends StatelessWidget {
           DrawerHeader(
             child: Icon(
               FontAwesomeIcons.solidHeart,
-              size: 48,
+              size: 56,
             ),
           ),
+          SizedBox(height: 16),
           CustomDrawerItemListView(),
 
           // CustomDrawerItem(),

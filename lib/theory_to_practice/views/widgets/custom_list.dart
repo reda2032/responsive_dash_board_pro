@@ -9,7 +9,7 @@ class CustomList extends StatelessWidget {
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
       child: SizedBox(
-        height: 100,
+        height: 150,
         child: ListView.builder(
             itemCount: 25,
             scrollDirection: Axis.horizontal,
