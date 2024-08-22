@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'views/HomeView.dart';
+import 'views/home_view.dart';
 
 class TheoryToPractice extends StatelessWidget {
   const TheoryToPractice({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return HomeView();
+    return const HomeView();
   }
 }
