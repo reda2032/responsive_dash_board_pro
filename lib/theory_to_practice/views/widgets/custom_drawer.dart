@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import 'custom_drawer_item_list_view.dart';
+
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
 
@@ -16,6 +18,8 @@ class CustomDrawer extends StatelessWidget {
               size: 48,
             ),
           ),
+          CustomDrawerItemListView(),
+
           // CustomDrawerItem(),
         ],
       ),
