@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'theory_to_practice/theory_to_practice.dart';
+import 'invoicing_dashboard/views/dashboard_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: TheoryToPractice(),
+      home: DashboardView(), // TheoryToPractice(),
     );
   }
 }
