@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'invoicing_dashboard/views/dashboard_view.dart';
+import 'package:responsive_dash_board/dashboard/views/dashboard_view.dart';
 
 void main() {
   runApp(const MyApp());
